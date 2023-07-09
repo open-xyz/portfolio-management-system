@@ -1,0 +1,213 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@section Scripts{
+    <script>
+        var Urlredirect = '@Url.Action("Stock","Home")'
+        var UrlAddStock = '@Url.Action("AddStockuser","Home")'
+        var UrlUpdateStock = '@Url.Action("UpdateStockuser","Home")'
+        var UrlDelUserStockID = '@Url.Action("DeleteStock","Home")'
+    </script>
+
+    <script src="~/js/Home/Stock.js" asp-append-version="true"></script>
+}
+@model PMS.Models.viewmodel;
+<div class="container" style="margin-top: 50px;padding: 20px;box-shadow: 0 16px 26px -10px rgba(0, 82, 156, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 82, 156, 0.2);">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Stocks </h4>
+            </div>
+            @* <div class="col-sm-4 text-right" style="display:inherit">
+                @using (Html.BeginForm("Users", "Admin", FormMethod.Post))
+                {
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="Search By Stock ID" id="txtsearch" name="txtsearch" />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="submit" id="btnSearch" class="btn btn-success" value="Search" />
+                        </div>
+                    </div>
+                }
+            </div> *@
+            <div class="col-sm-6">
+                <input type="button" id="btnSearch" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddStockModel" value="Add Stock" style="float:right" />
+            </div>
+        </div>
+
+        <hr />
+        <table id="tbluserstocks" style="width:100%" class="table table-striped">
+            <thead style="background-color: #a5d0f5;border-bottom: black;">
+                <tr>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Sr.No</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Transaction No</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Stock ID </h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Stock Name </h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Face value</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Quantity</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Action</h6>
+                    </td>
+                </tr>
+            </thead>
+
+            @if (Model.lstuserstockDtls.listUserStockDtls != null)
+            {
+                var i = 1;
+                foreach (var data in Model.lstuserstockDtls.listUserStockDtls)
+                {
+                    <tr>
+                        <td>@i</td>
+                        <td>@data.TransactionNo</td>
+                        <td>@data.StockID</td>
+                        <td>@data.StockName</td>
+                        <td>@data.PurchasePrice</td>
+                        <td>@data.Quantity</td>
+                        <td>
+                            <a href="javascript:void(0)" id="update"><i class="fa fa-list"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="javascript:void(0)" id="delete"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    i++;
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" style="text-align:center">No Data Found</td>
+
+                </tr>
+            }
+        </table>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="AddStockModel" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Stocks</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table id="tblselectstock" style="width:100%" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td>
+                                <h6 class="td1" style="font-size:16px">select</h6>
+                            </td>
+                            <td>
+                                <h6 class="td1" style="font-size:16px">Stock ID </h6>
+                            </td>
+                            <td>
+                                <h6 class="td1" style="font-size:16px">Stock Name </h6>
+                            </td>
+                            <td>
+                                <h6 class="td1" style="font-size:16px">Face value</h6>
+                            </td>
+                        </tr>
+                    </thead>
+
+                    @if (Model.lststockDtls.listStockDtls != null)
+                    {
+                        foreach (var data in Model.lststockDtls.listStockDtls)
+                        {
+                            <tr>
+                                <td>
+                                    <input type="radio" id="chkstock" name="stockardio">
+                                </td>
+                                <td>@data.StockID</td>
+                                <td>@data.StockName</td>
+                                <td>@data.FaceValue</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="7" style="text-align:center">No Data Found</td>
+
+                        </tr>
+                    }
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#AddStockModelQty">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="AddStockModelQty" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Stocks - <label id="lblstockname"></label></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12 mb-2">
+                        <b>Stock ID:&nbsp;<label id="lblstockid"></label></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <b>Face value:&nbsp;<label id="lblfvalue"></label></b>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="Quantity" id="txtqty" />
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="button" id="btnAdd" class="btn btn-success" value="Add" />
+                    </div>
+                    <div class="col-sm-12 mt-2">
+                        <b>Total:&nbsp;<label id="lbltotal">0</label></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="updateStockModelQty" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Stocks - <label id="lblustockname"></label></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12 mb-2">
+                        <b>Transaction ID:&nbsp;<label id="lblutransid"></label></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <b>Stock ID:&nbsp;<label id="lblustockid"></label></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <b>Face value:&nbsp;<label id="lblufvalue"></label></b>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="Quantity" id="txtuqty" />
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="button" id="btnUpdate" class="btn btn-success" value="Update" />
+                    </div>
+                    <div class="col-sm-12 mt-2">
+                        <b>Total:&nbsp;<label id="lblutotal">0</label></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+﻿@{
+    Layout = "_Layout";
+}
+@section Scripts{
+    <script>
+    var LoginUrl = '@Url.Action("Authenticate","Home")'
+    </script>
+
+    <script src="~/js/Home/Login.js" asp-append-version="true"></script>
+}
+
+<style>
+
+    .form-group {
+        margin: 30px 0;
+    }
+
+        .form-group input {
+            height: 50px;
+        }
+</style>
+
+<div class="container">
+
+    <div id="DivPostLogin">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div class="card" style="margin: 50px 0; box-shadow: 0px 0px 23px -13px black;">
+
+                    <div class="card-body">
+                        <div style="margin:20px 0">
+                            <h3 style="text-align: center;margin: 0 0 20px 0">Login</h3>
+                            <p style="text-align: center;margin: 20px 0 40px 0">Don't have an account?&nbsp;<a asp-controller="Home" asp-action="Register" style="color: #00529c; text-decoration: none">Create account</a></p>
+                            
+                            <div id="diverror" class="form-group">
+                                <div class="alert alert-danger">
+                                    Invalid EmailID Or Password
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input ID="txtUserID" Class="form-control" placeholder="UserID / Email or Contact" value="surajpawar@gmail.com" />
+                                <label class="form-label">UserID / Email or Contact</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input ID="txtPassword" Class="form-control" type="password" placeholder="Password" value="123456" />
+                                <label class="form-label">Password</label>
+                            </div>
+
+                            <button ID="btnLogin" class="btn btn-cust">Login</button>
+                            <label ID="ltrMsg"></label>
+
+                           @*  <div style="text-align:center">
+                                <a style=" color: #00529c; text-decoration: none" href="/recover-password">Forgot Password</a>
+                            </div> *@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+</div>
+
+<div id="DivPreLogin">
+    <div style="text-align: center;">
+        <label ID="lblUserName"></label>
+        <br />
+        <br />
+        <a style="font-size: 30px; color: black" href="/user/my-profile-edit">My Account</a><br />
+        <b>
+            <a style="font-size: 20px; color: #d11c1c" href="/admin/logout">[ Logout  ]</a><br />
+            <br />
+        </b>
+    </div>
+</div>

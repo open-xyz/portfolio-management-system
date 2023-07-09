@@ -1,0 +1,208 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@section Scripts{
+    <script>
+        var Urlredirect = '@Url.Action("FixedIncome","Home")'
+        var UrlAddFI = '@Url.Action("AddFIuser","Home")'
+        var UrlUpdateFI = '@Url.Action("UpdateFIuser","Home")'
+        var UrlDelUserFIID = '@Url.Action("DeleteFI","Home")'
+    </script>
+
+    <script src="~/js/Home/FixedIncome.js" asp-append-version="true"></script>
+}
+@model PMS.Models.viewmodel;
+<div class="container" style="margin-top: 50px;padding: 20px;box-shadow: 0 16px 26px -10px rgba(0, 82, 156, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 82, 156, 0.2);">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Fixed Income</h4>
+            </div>
+            @* <div class="col-sm-4 text-right" style="display:inherit">
+                @using (Html.BeginForm("Users", "Admin", FormMethod.Post))
+                {
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="Search By Stock ID" id="txtsearch" name="txtsearch" />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="submit" id="btnSearch" class="btn btn-success" value="Search" />
+                        </div>
+                    </div>
+                }
+            </div> *@
+            <div class="col-sm-6">
+                <input type="button" id="btnSearch" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddFIModel" value="Add Plan" style="float:right" />
+            </div>
+        </div>
+
+        <hr />
+        <table id="tbluserFI" style="width:100%" class="table table-striped">
+            <thead style="background-color: #a5d0f5;border-bottom: black;">
+                <tr>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Sr.No</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Transaction No</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">FI ID </h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Plan Name </h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Purchase Qty</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Purchase Date</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Action</h6>
+                    </td>
+                </tr>
+            </thead>
+
+            @if (Model.lstUserFIDtls != null)
+            {
+                var i = 1;
+                foreach (var data in Model.lstUserFIDtls.listUserFIDtls)
+                {
+                    <tr>
+                        <td>@i</td>
+                        <td>@data.FITransactionNo</td>
+                        <td>@data.FIID</td>
+                        <td>@data.FIName</td>
+                        <td>@data.PurchaseQty</td>
+                        <td>@data.PurchaseDate</td>
+                        
+                        <td>
+                            <a href="javascript:void(0)" id="update"><i class="fa fa-list"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="javascript:void(0)" id="delete"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    i++;
+                }
+            }
+            
+        </table>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="AddFIModel" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add FIxed Income Plan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table id="tblselectFI" style="width:100%" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td>
+                                <h6 class="td1" style="font-size:16px">select</h6>
+                            </td>
+                            <td>
+                                <h6 class="td1" style="font-size:16px">FI ID </h6>
+                            </td>
+                            <td>
+                                <h6 class="td1" style="font-size:16px">Plan Name </h6>
+                            </td>
+                            <td hidden>
+                                <h6 class="td1" style="font-size:16px">Description </h6>
+                            </td>
+                            <td>
+                                <h6 class="td1" style="font-size:16px">Tenure</h6>
+                            </td>
+                            <td>
+                                <h6 class="td1" style="font-size:16px">Purchase Unit Value</h6>
+                            </td>
+                        </tr>
+                    </thead>
+
+                    @if (Model.lstFIDtls.listFIDtls != null)
+                    {
+                        foreach (var data in Model.lstFIDtls.listFIDtls)
+                        {
+                            <tr>
+                                <td>
+                                    <input type="radio" id="chkstock" name="stockardio">
+                                </td>
+                                <td>@data.FIID</td>
+                                <td>@data.FIName</td>
+                                <td hidden>@data.FIDescription</td>
+                                <td>@data.Tenure</td>
+                                <td>@data.PurchaseUnitValue</td>
+                            </tr>
+                        }
+                    }
+                    
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#AddFIModelQty">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="AddFIModelQty" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Fixed Income Plan <br /><label id="lblplanname"></label></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12 mb-2">
+                        <b>FI ID:&nbsp;<label id="lblFIid"></label></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <b>Unit value:&nbsp;<label id="lblunitvalue"></label></b><br /><br />
+                        <b>Description:&nbsp;<label id="lblDescription"></label></b>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="Purchase Quantity" id="txtqty" />
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="button" id="btnAdd" class="btn btn-success" value="Add" />
+                    </div>
+                    <div class="col-sm-12 mt-2">
+                        <b>Total:&nbsp;<label id="lbltotal">0</label></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="updateStockModelQty" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update FI - <label id="lbluplanname"></label></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12 mb-2">
+                        <b>Transaction ID:&nbsp;<label id="lblutransid"></label></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <b>FI ID:&nbsp;<label id="lblufid"></label></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="Quantity" id="txtuqty" />
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="button" id="btnUpdate" class="btn btn-success" value="Update" />
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

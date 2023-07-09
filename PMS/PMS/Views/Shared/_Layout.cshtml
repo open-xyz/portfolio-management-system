@@ -1,0 +1,458 @@
+﻿@model PMS.Models.viewmodel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVC_Project</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link href="~/lib/bootstrap_5.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/font-awesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/lib/datatables/css/datatable.css" rel="stylesheet" />
+    <link href="~/FontAwesome/CSS/font-awesome.css" rel="stylesheet" />
+    <script>
+        var UrlgetUserDtls = '@Url.Action("GetUserDtls", "Home")';
+        var UrlupdateUserDtls = '@Url.Action("UpdateUserDtls", "Home")';
+        var UrlupdatePass = '@Url.Action("UpdatePassword", "Home")';
+    </script>
+    <style>
+
+        .footer-col a {
+            color: #000;
+            text-decoration: none;
+        }
+
+            .footer-col a:hover {
+                padding-left: 10px;
+                font-weight: 500;
+                color: #c90000;
+                transition: ease-in .2s;
+            }
+
+        .navbar-light .navbar-nav .nav-link {
+            font-weight: 500;
+            padding: 30px 15px;
+            color: #000 !important;
+        }
+
+            .navbar-light .navbar-nav .nav-link:hover {
+                background-color: #00529c;
+                color: black;
+            }
+
+        .dropdown-menu {
+            width: 240px;
+        }
+
+        .dropdown-item:focus, .dropdown-item:hover {
+            border-left: 5px solid #00529c;
+            color: black;
+        }
+
+        .image-box {
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            /*width: 540px;*/
+        }
+
+            .image-box img {
+                max-width: 100%;
+                transition: all 0.3s;
+                display: block;
+                width: 100%;
+                height: auto;
+                transform: scale(1);
+            }
+
+            .image-box:hover img {
+                transform: scale(1.1);
+            }
+
+        .dropdown:hover > .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        @*<div style="padding: 5px; background-color: #127cc0 ">
+        <div class="container">
+        <div class="col-sm-12 text-right">
+        <a style="color:white;text-decoration:none" href="tel:+919820519699"><i class="fa fa-phone"></i> +91 9820519699 /</a>
+        <a style="color:white;text-decoration:none" href="mailto:pbane05121999@gmail.com"><i class="fa fa-envelope"></i> pbane05121999@gmail.com</a>
+        </div>
+        </div>
+        </div>*@
+        @{
+            var prelogin = "";
+            var postlogin = "";
+            var UserName = "";
+            try
+            {
+                if (Model.userDtls != null)
+                {
+                    prelogin = "hidden";
+                    postlogin = "show";
+                    UserName = Model.userDtls.FirstName + " " + Model.userDtls.Lastname;
+                }
+                else
+                {
+                    prelogin = "show";
+                    postlogin = "hidden";
+                }
+            }
+            catch
+            {
+                prelogin = "show";
+                postlogin = "hidden";
+            }
+        }
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow" style="padding:0">
+
+            <div class="container-fluid">
+                <div class="col-sm-3 col-8">
+                    <a asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="~/Images/logo.png" style="max-width:60%" />
+                    </a>
+                </div>
+                <div class="col-sm-7 col-12 text-center @postlogin">
+                    <button style="position:absolute;top:-50px;right:10px" class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" style="display:unset!important">
+                        <ul class="navbar-nav" style="display: inline-flex;">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Stock">Stock</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="MutualFund">Mutual Fund</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FixedIncome">Income Details</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-2">
+                    <div style="text-align: right; clear: both;">
+                        <div class="col-sm-12">
+                            @{
+                                try
+                                {
+                                    if (Model.userDtls != null)
+                                    {
+                                        prelogin = "hidden";
+                                        postlogin = "show";
+                                        UserName = Model.userDtls.FirstName + " " + Model.userDtls.Lastname;
+                                    }
+                                    else
+                                    {
+                                        prelogin = "show";
+                                        postlogin = "hidden";
+                                    }
+                                }
+                                catch
+                                {
+                                    prelogin = "show";
+                                    postlogin = "hidden";
+                                }
+                            }
+
+                            <table id="ctl00_ctl00_ctrl_ShoppingCartMini_divprelogin" style="margin-bottom: 5px; float: right; width:100%" class="@prelogin">
+                                <tbody>
+                                    <tr>
+                                        <td><a asp-action="Register" asp-controller="Home" style="text-decoration:none;font-size:13px; padding-right: 2px; padding-left: 2px; color: #555;">Register</a> <a style="text-decoration:none;padding-right: 2px; padding-left: 2px; color: #555;font-size:13px;" asp-controller="Home" asp-action="Login"> | Login</a></td>
+                                    </tr>
+                                </tbody>
+
+
+
+                            </table>
+                            <table id="ctl00_ctl00_ctrl_ShoppingCartMini_divprelogin" style="margin-bottom: 5px; float: right; width:100%" class="@postlogin">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="nav-item dropdown" style="display:inline-block">
+                                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>&nbsp;Hi! @UserName</a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin:0;width: -webkit-fill-available;">
+                                                    <a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#UserModel">Profile</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ChangePassModel">Change Password</a>
+                                                </div>
+                                            </div>
+                                            @* <div style="text-decoration:none;font-size:13px; padding-right: 2px; padding-left: 2px; color: #555;"><i class="fa fa-user"></i>&nbsp;Hii! @UserName</div>  *@
+                                            | <a asp-action="Logout" asp-controller="Home" style="text-decoration:none;font-size:15px; padding-right: 2px; padding-left: 2px; color: #000;"><i class="fa fa-sign-out"></i>&nbsp;Logout</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            @*<table style="margin-bottom: 5px;">
+                            <tbody>
+                            <tr>
+                            <td>
+                            <a href="#" data-toggle="modal" data-target="#SearchModal" style="float: right; text-decoration:none; padding-right: 2px; padding-left: 2px; color: #555;">
+                            <i class="fa fa-search"></i> Search |
+                            </a>
+                            </td>
+                            <td><a href="/shoppingcart" style="float: right; color: #555; padding-right: 2px; padding-left: 2px;text-decoration:none;">Cart </a></td>
+                            <td style="padding-left: 0px;">
+                            <a href="/shoppingcart" style="text-decoration:none;float: right; color: #555; padding-right: 2px; padding-left: 2px;">
+                            (<span id="ctl00_ctl00_ctrl_ShoppingCartMini_Repeater1_ctl00_ProdLabel">0</span>) <i class="fa fa-shopping-cart"></i>
+                            </a>
+                            </td>
+                            </tr>
+                            </tbody>
+                            </table>*@
+                        </div>
+                        <div style="clear: both"></div>
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+    <main role="main" class="pb-3" style="min-height:496px">
+        @RenderBody()
+    </main>
+
+
+    <footer>
+        <div style="background-color: #00529c;">
+            <div class="container">
+                <div class="row" style="padding:10px 0">
+                    <div class="col-sm-12 text-center" style="color:#fff">
+                        &copy; Portfolio Managment System - All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="modal fade" id="UserModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Update Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @if (Model.userDtls != null)
+                    {
+                        <div class="row">
+                            <label id="lblloginid" hidden></label>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input ID="txtFirstName" Class="form-control" placeholder="First Name" value="@Model.userDtls.FirstName" />
+                                    <label class="form-label">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input ID="txtLastName" Class="form-control" placeholder="Last Name" value="@Model.userDtls.Lastname" />
+                                    <label class="form-label">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+
+                                    <select ID="DDGender" class="form-control">
+                                        <option Value="">-- Select Gender --</option>
+                                        <option value="M">Male</option>
+                                        <option value="F">Female</option>
+                                    </select>
+                                    <label class="form-label">Gender</label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input ID="txtMobile" class="form-control" value="@Model.userDtls.Phone" />
+                                    <label class="form-label">Mobile No</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input ID="txtEmail" class="form-control" placeholder="Email" value="@Model.userDtls.EmailID" />
+                                    <label class="form-label">Email</label>
+                                    <label style="color:darkred" id="lblemailerorr" class="form-label lblerror"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input id="txtDateOfBirth" class="form-control datepicker" placeholder="DOB" value="@Model.userDtls.DOB" />
+                                    <label class="form-label">DOB</label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <hr />
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input id="txtCountry" class="form-control datepicker" placeholder="Country" value="@Model.userDtls.Country" />
+                                    <label class="form-label">Country</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <select ID="DDState" class="form-control">
+                                        <option Value="">-- Select State--</option>
+                                        <option Value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                        <option Value="Assam">Assam</option>
+                                        <option Value="Andhra Pradesh">Andhra Pradesh</option>
+                                        <option Value="Andaman & Nicobar">Andaman &amp; Nicobar</option>
+                                        <option Value="Bihar">Bihar</option>
+                                        <option Value="Chandigarh">Chandigarh</option>
+                                        <option Value="Chhatisgarh">Chhatisgarh</option>
+                                        <option Value="Delhi">Delhi</option>
+                                        <option Value="Daman &amp; Diu">Daman &amp; Diu</option>
+                                        <option Value="Nagar Haveli">Nagar Haveli</option>
+                                        <option Value="Gujarat">Gujarat</option>
+                                        <option Value="Goa">Goa</option>
+                                        <option Value="Himachal Pradesh">Himachal Pradesh</option>
+                                        <option Value="Haryana">Haryana</option>
+                                        <option Value="Jammu & Kashmir">Jammu &amp; Kashmir</option>
+                                        <option Value="Jharkhand">Jharkhand</option>
+                                        <option Value="Karnataka">Karnataka</option>
+                                        <option Value="Kerala">Kerala</option>
+                                        <option Value="Lakshadweep">Lakshadweep</option>
+                                        <option Value="Manipur">Manipur</option>
+                                        <option Value="Mizoram">Mizoram</option>
+                                        <option Value="Meghalaya">Meghalaya</option>
+                                        <option Value="Madhya Pradesh">Madhya Pradesh</option>
+                                        <option Value="Maharashtra" selected>Maharashtra</option>
+                                        <option Value="Nagaland">Nagaland</option>
+                                        <option Value="Orissa">Orissa</option>
+                                        <option Value="Punjab">Punjab</option>
+                                        <option Value="Pondicherry">Pondicherry</option>
+                                        <option Value="Rajasthan">Rajasthan</option>
+                                        <option Value="Sikkim">Sikkim</option>
+                                        <option Value="Tripura">Tripura</option>
+                                        <option Value="Tamil Nadu">Tamil Nadu</option>
+                                        <option Value="Uttaranchal">Uttaranchal</option>
+                                        <option Value="Uttar Pradesh">Uttar Pradesh</option>
+                                        <option Value="West Bengal">West Bengal</option>
+                                    </select>
+                                    <label class="form-label">State</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input ID="txtCity" class="form-control" placeholder="City" value="@Model.userDtls.City" />
+                                    <label class="form-label">City</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input ID="txtPin" class="form-control" placeholder="Pin" value="@Model.userDtls.Pincode" />
+                                    <label class="form-label">Pin</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="form-group">
+                                    <textarea ID="txtAddress" rows="1" class="form-control" placeholder="Address">@Model.userDtls.Address</textarea>
+                                    <label class="form-label">Address</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 text-right">
+                                <label ID="lblErr" ForeColor="#CC3300"></label>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="btnupdateUD" class="btn btn-success">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ChangePassModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label id="lblloginid" hidden></label>
+                        <div id="diverror" class="col-sm-12">
+                            <div class="alert alert-danger text-center">
+                                <label id="lblmessage"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mt-3">
+                            <div class="form-group">
+                                <input ID="txtoldpass" class="form-control" placeholder="Old Password" type="Password" />
+                                <label class="form-label">Old Password</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input ID="txtnewpass" class="form-control" placeholder="Old Password" type="Password" />
+                                <label class="form-label">New Password</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input ID="txtConPass" class="form-control" placeholder="Old Password" type="Password" />
+                                <label class="form-label">Confirm Password</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 text-right">
+                            <label ID="lblErr" ForeColor="#CC3300"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="btnupdatepass" class="btn btn-success">Change Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+    @*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+    <script src="~/lib/bootstrap_5.3/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/datatables/js/datatable.js"></script>
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

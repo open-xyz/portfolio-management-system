@@ -1,0 +1,152 @@
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\appsettings.Development.json
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\appsettings.json
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\PMS_Api.exe
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\PMS_Api.deps.json
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\PMS_Api.runtimeconfig.json
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\PMS_Api.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\PMS_Api.pdb
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Azure.Core.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Azure.Identity.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Humanizer.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\System.CodeDom.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Memory.Data.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.csproj.AssemblyReference.cache
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.GeneratedMSBuildEditorConfig.editorconfig
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.AssemblyInfoInputs.cache
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.AssemblyInfo.cs
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.csproj.CoreCompileInputs.cache
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.MvcApplicationPartsAssemblyInfo.cs
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.MvcApplicationPartsAssemblyInfo.cache
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets\msbuild.PMS_Api.Microsoft.AspNetCore.StaticWebAssets.props
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets\msbuild.build.PMS_Api.props
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.PMS_Api.props
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.PMS_Api.props
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets.pack.json
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets.build.json
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets.development.json
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\scopedcss\bundle\PMS_Api.styles.css
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.csproj.CopyComplete
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\refint\PMS_Api.dll
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.pdb
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.genruntimeconfig.cache
+E:\pratik\Code\New folder\PMS_Api\PMS_Api\PMS_Api\obj\Debug\net7.0\ref\PMS_Api.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\appsettings.Development.json
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\appsettings.json
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\PMS_Api.exe
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\PMS_Api.deps.json
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\PMS_Api.runtimeconfig.json
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\PMS_Api.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\PMS_Api.pdb
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Azure.Core.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Azure.Identity.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Humanizer.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\System.CodeDom.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Memory.Data.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.csproj.AssemblyReference.cache
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.GeneratedMSBuildEditorConfig.editorconfig
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.AssemblyInfoInputs.cache
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.AssemblyInfo.cs
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.csproj.CoreCompileInputs.cache
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.MvcApplicationPartsAssemblyInfo.cs
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.MvcApplicationPartsAssemblyInfo.cache
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets\msbuild.PMS_Api.Microsoft.AspNetCore.StaticWebAssets.props
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets\msbuild.build.PMS_Api.props
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.PMS_Api.props
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.PMS_Api.props
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets.pack.json
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets.build.json
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\staticwebassets.development.json
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\scopedcss\bundle\PMS_Api.styles.css
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.csproj.CopyComplete
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\refint\PMS_Api.dll
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.pdb
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\PMS_Api.genruntimeconfig.cache
+E:\pratik\Code\PMS\PMS_Api\PMS_Api\obj\Debug\net7.0\ref\PMS_Api.dll

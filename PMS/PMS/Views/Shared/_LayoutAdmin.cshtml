@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin</title>
+
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link href="~/lib/bootstrap_5.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="~/FontAwesome/CSS/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/lib/datatables/css/datatable.css" rel="stylesheet" />
+   
+    <style>
+
+        .dropdown:hover > .dropdown-menu {
+            display: block;
+        }
+
+        .navbar-nav .nav-link {
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark" style="box-shadow:0 0.25rem 0.75rem rgba(0, 0, 0, .05)">
+        <div class="col-sm-3 col-8">
+            <a asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/Images/logo.png" style="max-width:60%" />
+            </a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 collapse show bg-light pt-2 pr-0  pl-0 min-vh-100" id="sidebar">
+                <ul class="navbar-nav nav flex-column flex-nowrap overflow-hidden">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark text-truncate" style="background-color: white;border: 1px solid #e9e9e9;box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);">@ViewBag.UserName</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark text-truncate" asp-area="" asp-controller="Admin" asp-action="Dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark text-truncate" asp-area="" asp-controller="Admin" asp-action="Users">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark text-truncate" asp-area="" asp-controller="Admin" asp-action="Stock">Stocks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark text-truncate" asp-area="" asp-controller="Admin" asp-action="MutualFund">Mutual Funds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark text-truncate" asp-area="" asp-controller="Admin" asp-action="FixedIncome">Fixed Income</a>
+                    </li>
+
+                    @* <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin:0">
+                            <a class="dropdown-item" asp-controller="Admin" asp-action="Dashboard">All Category</a>
+                            <a class="dropdown-item" asp-controller="Admin" asp-action="CategoryAdd">Add Category</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin:0">
+                            <a class="dropdown-item" asp-controller="Admin" asp-action="ProductAdd">Add Products</a>
+                            <a class="dropdown-item" href="#">Full Sleeves</a>
+                            <a class="dropdown-item" href="#">Half Sleeves</a>
+                            <a class="dropdown-item" href="#">Sleeveless</a>
+                            <a class="dropdown-item" href="#">Rounded Neck</a>
+                            <a class="dropdown-item" href="#">Collar</a>
+                            <a class="dropdown-item" href="#">Dry Fit</a>
+                            <a class="dropdown-item" href="#">sweatshirt</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sliders</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin:0">
+                            <a class="dropdown-item" href="#">Jeans</a>
+                            <a class="dropdown-item" href="#">Cargo</a>
+                            <a class="dropdown-item" href="#">Chenos</a>
+                            <a class="dropdown-item" href="#">Formals</a>
+                            <a class="dropdown-item" href="#">Dry Fit Tracks</a>
+                        </div>
+                    </li> *@
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark btn btn-danger" style="color: white!important;text-align: inherit;" asp-area="" asp-controller="Home" asp-action="Logout">Logout</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col pt-2">
+                <main role="main">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+    
+    @*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+    <script src="~/lib/bootstrap_5.3/js/bootstrap.bundle.min.js"></script>
+
+  
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/lib/datatables/js/datatable.js"></script>
+
+    @RenderSection("Scripts", required: false)
+
+
+
+
+
+
+
+    
+</body>
+</html>

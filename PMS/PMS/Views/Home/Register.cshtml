@@ -1,0 +1,217 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<style>
+    .lblerror {
+        position: inherit !important;
+        padding: 0 0 0 3px !important;
+    }
+</style>
+
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="~/DateTimePicker/CSS/DatePicker.css" rel="stylesheet" />
+
+<div id="divForm" class="container">
+
+
+    <div id=divregistration class="card" style="margin: 50px 0; box-shadow: 0px 0px 23px -13px black;">
+
+        <div class="card-body">
+            <form id="regform">
+                <div style="text-align:center">
+                    <a id="alreadyaccount" style="display: inline-block; color: #00529c; padding: 20px; text-decoration: none" asp-controller="Home" asp-action="Login">I already have account <strong>(click here to login)</strong></a>
+                </div>
+                <hr style="margin-top: 5px;" />
+                <p style="font-size: 13px; color: #fff; text-align: center; background-color: #00529c; padding: 5px 10px; border-radius: 3px">Note : * All fields are mandatory</p>
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <input ID="txtFirstName" Class="form-control" placeholder="First Name" value="Pratik" />
+                            <label class="form-label">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <input ID="txtLastName" Class="form-control" placeholder="Last Name" value="Bane" />
+                            <label class="form-label">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <select ID="DDGender" class="form-control">
+                                <option Value="">-- Select Gender --</option>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <input ID="txtMobile" class="form-control" placeholder="Mobile No" value="9820519699" />
+                            <label class="form-label">Mobile No</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <input ID="txtEmail" class="form-control" placeholder="Email" value="pbane05121999@gmail.com" />
+                            <label class="form-label">Email</label>
+                            <label style="color:darkred" id="lblemailerorr" class="form-label lblerror"></label>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <input id="txtDateOfBirth" class="form-control datepicker" placeholder="DOB" value="12/05/1999" />
+                            <label class="form-label">DOB</label>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <hr />
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <input id="txtCountry" class="form-control datepicker" placeholder="Country" value="India" />
+                            <label class="form-label">Country</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <select ID="DDState" class="form-control">
+
+                                <option Value="">-- Select State--</option>
+                                <option Value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option Value="Assam">Assam</option>
+                                <option Value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option Value="Andaman & Nicobar">Andaman &amp; Nicobar</option>
+                                <option Value="Bihar">Bihar</option>
+                                <option Value="Chandigarh">Chandigarh</option>
+                                <option Value="Chhatisgarh">Chhatisgarh</option>
+                                <option Value="Delhi">Delhi</option>
+                                <option Value="Daman &amp; Diu">Daman &amp; Diu</option>
+                                <option Value="Nagar Haveli">Nagar Haveli</option>
+                                <option Value="Gujarat">Gujarat</option>
+                                <option Value="Goa">Goa</option>
+                                <option Value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option Value="Haryana">Haryana</option>
+                                <option Value="Jammu & Kashmir">Jammu &amp; Kashmir</option>
+                                <option Value="Jharkhand">Jharkhand</option>
+                                <option Value="Karnataka">Karnataka</option>
+                                <option Value="Kerala">Kerala</option>
+                                <option Value="Lakshadweep">Lakshadweep</option>
+                                <option Value="Manipur">Manipur</option>
+                                <option Value="Mizoram">Mizoram</option>
+                                <option Value="Meghalaya">Meghalaya</option>
+                                <option Value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option Value="Maharashtra" selected>Maharashtra</option>
+                                <option Value="Nagaland">Nagaland</option>
+                                <option Value="Orissa">Orissa</option>
+                                <option Value="Punjab">Punjab</option>
+                                <option Value="Pondicherry">Pondicherry</option>
+                                <option Value="Rajasthan">Rajasthan</option>
+                                <option Value="Sikkim">Sikkim</option>
+                                <option Value="Tripura">Tripura</option>
+                                <option Value="Tamil Nadu">Tamil Nadu</option>
+                                <option Value="Uttaranchal">Uttaranchal</option>
+                                <option Value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option Value="West Bengal">West Bengal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <input ID="txtCity" class="form-control" placeholder="City" value="Mumbai" />
+                            <label class="form-label">City</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <input ID="txtPin" class="form-control" placeholder="Pin" value="401209" />
+                            <label class="form-label">Pin</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <textarea ID="txtAddress" rows="4" class="form-control" placeholder="Address">Demo Addres</textarea>
+                            <label class="form-label">Address</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <hr />
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <input ID="txtPassword" class="form-control" placeholder="Password" type="Password" value="123456" />
+                            <label class="form-label">Password</label>
+                            <label id="lblpasserror" class="form-label"></label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <input ID="txtconfirmpassword" class="form-control" placeholder="Confirm Password" type="Password" value="123456" />
+                            <label class="form-label">Confirm Password</label>
+                            <label style="color:darkred" id="lblconpasserorr" class="form-label lblerror"></label>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            Captcha Here
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <hr />
+                    </div>
+                    <div class="col-sm-12 text-right">
+                        <input type="button" ID="btnRegister" Class="btn btn-cust" Value="Register"/>
+                        <label ID="lblErr" ForeColor="#CC3300"></label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="divregistSuccess" class="card" style="margin: 50px 0; box-shadow: 0px 0px 23px -13px black;">
+        <div class="card-body">
+            <div class="alert alert-success text-center">
+                You have successfully registered to our system, Kindly Login <br /><br />
+                <a asp-action="Login" asp-controller="" class="btn btn-success">Login </a>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+@section scripts{
+
+    <script>
+        var instuserdtls = '@Url.Action("InstUserDtls", "Home")';
+    </script>
+    <script src="~/js/Home/Register.js" asp-append-version="true"></script>
+
+    <script src="~/DateTimePicker/JS/DatePicker.js"></script>
+    <script>
+        var currYear = (new Date()).getFullYear();
+
+        $(document).ready(function () {
+            $(".datepicker").datepicker({
+                defaultDate: new Date(),
+                // setDefaultDate: new Date(2000,01,31),
+                maxDate: new Date(),
+                yearRange: [1928, currYear],
+                format: "yyyy/mm/dd"
+            });
+        });
+
+    </script>
+
+}
+

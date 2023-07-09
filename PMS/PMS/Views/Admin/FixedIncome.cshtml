@@ -1,0 +1,228 @@
+﻿@{
+    Layout = "_LayoutAdmin";
+}
+
+@section Scripts
+    {
+    <script>
+        var UrlsaveFIDtls = '@Url.Action("SaveFIDtls", "Admin")';
+        var UrlFI = '@Url.Action("FixedIncome", "Admin")';
+        var UrlgetFIByID = '@Url.Action("GetFIByID", "Admin")';
+        var UrlDelFIID = '@Url.Action("DeleteFIByID", "Admin")';
+    </script>
+    <script src="~/js/Admin/FixedIncome.js" asp-append-version="true"></script>
+}
+@model PMS.Models.viewmodel;
+<style>
+    .iconset {
+        display: flex;
+        padding: 0;
+    }
+
+        .iconset li {
+            text-align: center;
+            list-style: none;
+            border: 1px solid gray;
+            margin-right: 10px;
+            padding: 35px;
+            background-color: #df0000;
+            color: black;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+            .iconset li span {
+                color: white;
+                font-weight: 600;
+                font-size: larger;
+            }
+
+    .lblerror {
+        position: inherit !important;
+        padding: 0 0 0 3px !important;
+    }
+</style>
+
+<div class="row" style="padding-left: 10px; margin-top: 50px">
+
+
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Fixed Income List </h4>
+            </div>
+           @*  <div class="col-sm-4 text-right" style="display:inherit">
+                @using (Html.BeginForm("Users", "Admin", FormMethod.Post))
+                {
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="Search By Stock ID" id="txtsearch" name="txtsearch" />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="submit" id="btnSearch" class="btn btn-success" value="Search" />
+                        </div>
+                    </div>
+                }
+            </div> *@
+            <div class="col-sm-6">
+                <input type="button" style="float:right" id="btnadd" data-bs-toggle="modal" data-bs-target="#AddFIModel" class="btn btn-success" value="Add New" />
+            </div>
+        </div>
+
+        <hr />
+
+        <table id="tblFI" style="width:100%" class="table table-striped">
+            <thead>
+                <tr>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">FIID </h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">FIName </h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Rate of Intrest </h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Tenure </h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">PurchaseUnitValue</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Action</h6>
+                    </td>
+                </tr>
+            </thead>
+            @if (Model.lstFIDtls.listFIDtls != null)
+            {
+                foreach (var data in Model.lstFIDtls.listFIDtls)
+                {
+                    <tr>
+                        <td>@data.FIID</td>
+                        <td>@data.FIName</td>
+                        <td>@data.RateOfInterest</td>
+                        <td>@data.Tenure</td>
+                        <td>@data.PurchaseUnitValue</td>
+                        <td>
+                            <a href="javascript:void(0)" onclick="getFIdtls(@data.FIID);"><i class="fa fa-list"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="javascript:void(0)" onclick="deleteFI(@data.FIID);"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" style="text-align:center">No Data Found</td>
+
+                </tr>
+            }
+
+        </table>
+    </div>
+
+</div>
+
+<div class="modal fade" id="FIViewModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Stock Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <label id="lbluFIid" hidden></label>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input ID="txtuFIName" Class="form-control" placeholder="Plan Name" />
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label">Desccription</label>
+                            <textarea ID="txtuFIDesc" Class="form-control" placeholder="Desccription"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">Rate of intrest</label>
+                            <input ID="txtuFIRateofInt" Class="form-control" placeholder="Rate of intrest" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">Tenure</label>
+                            <input ID="txtuFITenure" Class="form-control" placeholder="Tenure" />
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">Purchase unit value</label>
+                            <input ID="txtuFIPU" Class="form-control" placeholder="Purchase unit value" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="AddFIModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Fixed Income Plan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <label id="lblloginid" hidden></label>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input ID="txtFIName" Class="form-control" placeholder="Plan Name" />
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label">Desccription</label>
+                            <textarea ID="txtFIDesc" Class="form-control" placeholder="Desccription"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">Rate of intrest</label>
+                            <input ID="txtFIRateofInt" Class="form-control" placeholder="Rate of intrest" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">Tenure</label>
+                            <input ID="txtFITenure" Class="form-control" placeholder="Tenure" />
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">Purchase unit value</label>
+                            <input ID="txtFIPU" Class="form-control" placeholder="Purchase unit value" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="btnsave" class="btn btn-success">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

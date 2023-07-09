@@ -1,0 +1,709 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PMS.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PMS.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\DateTimePicker\\CSS\\DatePicker.css",
+      "PackagePath": "staticwebassets\\DateTimePicker\\CSS\\DatePicker.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\DateTimePicker\\JS\\DatePicker.js",
+      "PackagePath": "staticwebassets\\DateTimePicker\\JS\\DatePicker.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\FontAwesome\\CSS\\font-awesome.css",
+      "PackagePath": "staticwebassets\\FontAwesome\\CSS\\font-awesome.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\FontAwesome\\CSS\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\FontAwesome\\CSS\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\FontAwesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\FontAwesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\FontAwesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\FontAwesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\FontAwesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\FontAwesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\FontAwesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\FontAwesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\FontAwesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\FontAwesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\FontAwesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\FontAwesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\FontAwesome\\fonts\\linea-arrows-10.ttf",
+      "PackagePath": "staticwebassets\\FontAwesome\\fonts\\linea-arrows-10.ttf"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\Images\\Bg.gif",
+      "PackagePath": "staticwebassets\\Images\\Bg.gif"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\Images\\Home\\HomeShirt.jpg",
+      "PackagePath": "staticwebassets\\Images\\Home\\HomeShirt.jpg"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\Images\\Home\\hometshirt.jpg",
+      "PackagePath": "staticwebassets\\Images\\Home\\hometshirt.jpg"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\Images\\Perfumes.jpg",
+      "PackagePath": "staticwebassets\\Images\\Perfumes.jpg"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\logo.png"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\demo\\.DS_Store",
+      "PackagePath": "staticwebassets\\NivoSlider\\demo\\.DS_Store"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\demo\\images\\.DS_Store",
+      "PackagePath": "staticwebassets\\NivoSlider\\demo\\images\\.DS_Store"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\demo\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\NivoSlider\\demo\\images\\1.jpg"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\demo\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\NivoSlider\\demo\\images\\2.jpg"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\demo\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\NivoSlider\\demo\\images\\3.jpg"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\demo\\images\\dev7logo.png",
+      "PackagePath": "staticwebassets\\NivoSlider\\demo\\images\\dev7logo.png"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\demo\\images\\up.jpg",
+      "PackagePath": "staticwebassets\\NivoSlider\\demo\\images\\up.jpg"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\demo\\images\\walle.jpg",
+      "PackagePath": "staticwebassets\\NivoSlider\\demo\\images\\walle.jpg"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\demo\\scripts\\jquery-1.7.1.min.js",
+      "PackagePath": "staticwebassets\\NivoSlider\\demo\\scripts\\jquery-1.7.1.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\demo\\style.css",
+      "PackagePath": "staticwebassets\\NivoSlider\\demo\\style.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\jquery.nivo.slider.js",
+      "PackagePath": "staticwebassets\\NivoSlider\\jquery.nivo.slider.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\jquery.nivo.slider.pack.js",
+      "PackagePath": "staticwebassets\\NivoSlider\\jquery.nivo.slider.pack.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\nivo-slider.css",
+      "PackagePath": "staticwebassets\\NivoSlider\\nivo-slider.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\.DS_Store",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\.DS_Store"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\bar\\arrows.png",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\bar\\arrows.png"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\bar\\bar.css",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\bar\\bar.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\bar\\bullets.png",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\bar\\bullets.png"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\bar\\loading.gif",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\bar\\loading.gif"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\dark\\.DS_Store",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\dark\\.DS_Store"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\dark\\arrows.png",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\dark\\arrows.png"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\dark\\bullets.png",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\dark\\bullets.png"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\dark\\dark.css",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\dark\\dark.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\dark\\loading.gif",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\dark\\loading.gif"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\default\\arrows.png",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\default\\arrows.png"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\default\\bullets.png",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\default\\bullets.png"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\default\\default.css",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\default\\default.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\default\\loading.gif",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\default\\loading.gif"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\light\\arrows.png",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\light\\arrows.png"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\light\\bullets.png",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\light\\bullets.png"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\light\\light.css",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\light\\light.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\NivoSlider\\themes\\light\\loading.gif",
+      "PackagePath": "staticwebassets\\NivoSlider\\themes\\light\\loading.gif"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\ResCarousel\\css\\resCarousel.css",
+      "PackagePath": "staticwebassets\\ResCarousel\\css\\resCarousel.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\ResCarousel\\demoImg.jpg",
+      "PackagePath": "staticwebassets\\ResCarousel\\demoImg.jpg"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\ResCarousel\\js\\resCarousel.js",
+      "PackagePath": "staticwebassets\\ResCarousel\\js\\resCarousel.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\ResCarousel\\js\\resCarousel.min.js",
+      "PackagePath": "staticwebassets\\ResCarousel\\js\\resCarousel.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\css\\Admin\\Boxicons.min.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\Boxicons.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\css\\Admin\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\Admin\\Dashboard.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\Dashboard.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\Admin\\FixedIncome.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\FixedIncome.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\Admin\\MutualFund.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\MutualFund.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\Admin\\Stock.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\Stock.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\Admin\\Users.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\Users.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\CKEditor\\CK1.js",
+      "PackagePath": "staticwebassets\\js\\CKEditor\\CK1.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\CKEditor\\CK2.js",
+      "PackagePath": "staticwebassets\\js\\CKEditor\\CK2.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\CKEditor\\Ck3.js",
+      "PackagePath": "staticwebassets\\js\\CKEditor\\Ck3.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\Home\\FixedIncome.js",
+      "PackagePath": "staticwebassets\\js\\Home\\FixedIncome.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\Home\\Login.js",
+      "PackagePath": "staticwebassets\\js\\Home\\Login.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\Home\\MutualFund.js",
+      "PackagePath": "staticwebassets\\js\\Home\\MutualFund.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\Home\\Register.js",
+      "PackagePath": "staticwebassets\\js\\Home\\Register.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\Home\\Stock.js",
+      "PackagePath": "staticwebassets\\js\\Home\\Stock.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\bootstrap_5.3\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap_5.3\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\datatables\\css\\datatable.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\datatable.css"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\pratik\\Code\\PMS\\PMS\\PMS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.PMS.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.PMS.props",
+      "PackagePath": "build\\PMS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.PMS.props",
+      "PackagePath": "buildMultiTargeting\\PMS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.PMS.props",
+      "PackagePath": "buildTransitive\\PMS.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,296 @@
+﻿@{
+    Layout = "_LayoutAdmin";
+}
+
+@section Scripts
+    {
+    <script>
+        var UrlgetUserDtlsByID = '@Url.Action("GetUserDtlsByID", "Admin")';
+        var UrlDelUserDtlsByID = '@Url.Action("DeleteUserDtlsByID", "Admin")';
+        var UrlUser = '@Url.Action("Users", "Admin")';
+    </script>
+    <script src="~/js/Admin/Users.js" asp-append-version="true"></script>
+}
+@model PMS.Models.lstUserDtls;
+<style>
+    .iconset {
+        display: flex;
+        padding: 0;
+    }
+
+        .iconset li {
+            text-align: center;
+            list-style: none;
+            border: 1px solid gray;
+            margin-right: 10px;
+            padding: 35px;
+            background-color: #df0000;
+            color: black;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+            .iconset li span {
+                color: white;
+                font-weight: 600;
+                font-size: larger;
+            }
+
+    .lblerror {
+        position: inherit !important;
+        padding: 0 0 0 3px !important;
+    }
+</style>
+
+<div class="row" style="padding-left: 10px; margin-top: 50px">
+
+
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-8">
+                <h4>All Users </h4>
+            </div>
+            <div class="col-sm-4 text-right" style="display:inherit">
+                @using (Html.BeginForm("Users", "Admin", FormMethod.Post))
+                {
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="Search By Login ID" id="txtsearch" name="txtsearch" />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="submit" id="btnSearch" class="btn btn-success" value="Search" />
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <hr />
+
+        <table id="tblusers" style="width:100%" class="table table-striped">
+            <thead>
+                <tr>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Login ID </h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">First Name </h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Last Name</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Phone</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">State</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Country</h6>
+                    </td>
+                    <td>
+                        <h6 class="td1" style="font-size:16px">Action</h6>
+                    </td>
+                </tr>
+            </thead>
+
+            @if (Model.listUserDtls != null)
+            {
+                foreach (var data in Model.listUserDtls)
+                {
+                    <tr>
+                        <td>@data.LoginID</td>
+                        <td>@data.FirstName</td>
+                        <td>@data.Lastname</td>
+                        <td>@data.Phone</td>
+                        <td>@data.State</td>
+                        <td>@data.Country</td>
+                        <td>
+                            <a href="javascript:void(0)" onclick="getuserdtls(@data.LoginID);"><i class="fa fa-list"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="javascript:void(0)" onclick="deleteuser(@data.LoginID);"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" style="text-align:center">No Data Found</td>
+                   
+                </tr>
+            }
+        </table>
+    </div>
+
+</div>
+
+<div class="modal fade" id="UserModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">User Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <label id="lblloginid" hidden></label>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <input ID="txtFirstName" Class="form-control" placeholder="First Name" />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input ID="txtLastName" Class="form-control" placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">Gender</label>
+                            <select ID="DDGender" class="form-control">
+                                <option Value="">-- Select Gender --</option>
+                                <option value="M" selected>Male</option>
+                                <option value="F">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">Mobile No</label>
+                            <input ID="txtMobile" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input ID="txtEmail" class="form-control" placeholder="Email" />
+                            <label style="color:darkred" id="lblemailerorr" class="form-label lblerror"></label>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">DOB</label>
+                            <input id="txtDateOfBirth" class="form-control datepicker" placeholder="DOB" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <hr />
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">Country</label>
+                            <input id="txtCountry" class="form-control datepicker" placeholder="Country" />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">State</label>
+                            <select ID="DDState" class="form-control">
+
+                                <option Value="">-- Select State--</option>
+                                <option Value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option Value="Assam">Assam</option>
+                                <option Value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option Value="Andaman & Nicobar">Andaman &amp; Nicobar</option>
+                                <option Value="Bihar">Bihar</option>
+                                <option Value="Chandigarh">Chandigarh</option>
+                                <option Value="Chhatisgarh">Chhatisgarh</option>
+                                <option Value="Delhi">Delhi</option>
+                                <option Value="Daman &amp; Diu">Daman &amp; Diu</option>
+                                <option Value="Nagar Haveli">Nagar Haveli</option>
+                                <option Value="Gujarat">Gujarat</option>
+                                <option Value="Goa">Goa</option>
+                                <option Value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option Value="Haryana">Haryana</option>
+                                <option Value="Jammu & Kashmir">Jammu &amp; Kashmir</option>
+                                <option Value="Jharkhand">Jharkhand</option>
+                                <option Value="Karnataka">Karnataka</option>
+                                <option Value="Kerala">Kerala</option>
+                                <option Value="Lakshadweep">Lakshadweep</option>
+                                <option Value="Manipur">Manipur</option>
+                                <option Value="Mizoram">Mizoram</option>
+                                <option Value="Meghalaya">Meghalaya</option>
+                                <option Value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option Value="Maharashtra" selected>Maharashtra</option>
+                                <option Value="Nagaland">Nagaland</option>
+                                <option Value="Orissa">Orissa</option>
+                                <option Value="Punjab">Punjab</option>
+                                <option Value="Pondicherry">Pondicherry</option>
+                                <option Value="Rajasthan">Rajasthan</option>
+                                <option Value="Sikkim">Sikkim</option>
+                                <option Value="Tripura">Tripura</option>
+                                <option Value="Tamil Nadu">Tamil Nadu</option>
+                                <option Value="Uttaranchal">Uttaranchal</option>
+                                <option Value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option Value="West Bengal">West Bengal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">City</label>
+                            <input ID="txtCity" class="form-control" placeholder="City" />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">Pin</label>
+                            <input ID="txtPin" class="form-control" placeholder="Pin" />
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label class="form-label">Address</label>
+                            <textarea ID="txtAddress" rows="1" class="form-control" placeholder="Address">Demo Addres</textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <hr />
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input ID="txtPassword" class="form-control" placeholder="Password" type="Password" />
+                            <label id="lblpasserror" class="form-label"></label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">Valid User</label>
+                            <select ID="DDValidUser" class="form-control">
+                                <option Value="">-- Select --</option>
+                                <option Value="false">False</option>
+                                <option Value="true">True</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="form-label">Is Admin</label>
+                            <select ID="DDISAdmin" class="form-control">
+                                <option Value="">-- Select --</option>
+                                <option Value="false">False</option>
+                                <option Value="true">True</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <hr />
+                    </div>
+                    <div class="col-sm-12 text-right">
+                        <label ID="lblErr" ForeColor="#CC3300"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
